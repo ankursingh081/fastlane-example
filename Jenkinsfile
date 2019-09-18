@@ -3,7 +3,7 @@ node {
 		checkout scm
 		sh 'cd fastlane'
 	stage 'Fastlane Lint'
-		sh 'fastlane lint'
+		sh 'fastlane env && fastlane lint'
 	stage 'Test'
 		sh 'fastlane test'
 	stage 'Build'
