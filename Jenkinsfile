@@ -3,7 +3,7 @@ node {
 		checkout scm
 		//sh 'cd fastlane'
 	// stage 'Fastlane Lint'
-		sh 'export LC_ALL=en_US.UTF-8 && fastlane lint'
+		sh 'export LC_ALL=en_US.UTF-8'
 	// stage 'Test'
 	// 	sh 'fastlane test'
 	stage 'Build'
