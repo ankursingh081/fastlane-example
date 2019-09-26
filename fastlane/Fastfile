@@ -1,8 +1,8 @@
 default_platform :ios
 
 before_all do
-	sh 'mkdir ../reports || true'
-	sh 'mkdir ../dist || true'
+	# sh 'mkdir ../reports || true'
+	# sh 'mkdir ../dist || true'
 end
 
 # Fastlane runs all built in actions from one directory above where the Fastfile lives 
