@@ -64,13 +64,13 @@ lane :build do |options|
 
 	increment_build_number(
   		build_number: build_number,
-  		xcodeproj: "src/" + ENV["PROJECT"]
+  		# xcodeproj: "src/" + ENV["PROJECT"]
 	)
 
-	increment_version_number(
- 		version_number: ENV["VERSION"],
-  		xcodeproj: "src/" + ENV["PROJECT"]
-	)
+	# increment_version_number(
+ # 		version_number: ENV["VERSION"],
+ #  		xcodeproj: "src/" + ENV["PROJECT"]
+	# )
 
 	# Build additional args to xcodebuild
 	xcodeargs = "PRODUCT_BUNDLE_IDENTIFIER=" + ENV["BUNDLE_ID"]
