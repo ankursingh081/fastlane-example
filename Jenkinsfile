@@ -17,5 +17,9 @@ node {
       ])
     }
 
-}
+}finally {
+    stage('Clean Workspace') {
+      cleanWs()
+    }
+  }
  }
